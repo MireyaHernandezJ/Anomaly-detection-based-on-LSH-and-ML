@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "Anomaly Detection based on LSH and ML"
+version = "0.1.0"
+description = "Leverage LSH (Nilsimsa) for representig network traffic and ML algorithms to detect malicious behavior"
+authors = ["Mireya Lucia HJ"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+nilsimsa = "^0.3.8"
+scikit-learn = "^1.4.1.post1"
+scapy = "^2.5.0"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+matplotlib = "^3.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+pytest = "^8.1.1"
+mypy = "^1.9.0"
+isort = "^5.13.2"
+black = "^24.3.0"
+autopep8 = "^2.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
